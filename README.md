@@ -14,3 +14,8 @@ Este projeto está licenciado sob a Licença ISC. Consulte o arquivo [LICENSE](L
 - **Repositório:** [https://github.com/gleuter/pgats-programacao-automacao-tstes-js](https://github.com/gleuter/pgats-programacao-automacao-tstes-js)
 - **Relatar problemas:** [https://github.com/gleuter/pgats-programacao-automacao-tstes-js/issues](https://github.com/gleuter/pgats-programacao-automacao-tstes-js/issues)
 
+Para rodar os testes faca o download do projeto 
+
+Passos
+1 - na raiz execute o comando npm install
+2 - depois execute npm t
