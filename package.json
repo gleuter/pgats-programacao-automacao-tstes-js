@@ -1,0 +1,25 @@
+{
+  "name": "pgats-programacao-automacao-tstes",
+  "version": "1.0.0",
+  "description": "Treabalho conclusão de disciplina de Programação para Automação de Testes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleuter/pgats-programacao-automacao-tstes-js.git"
+  },
+  "keywords": [
+    "pgats"
+  ],
+  "author": "Gleuter Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gleuter/pgats-programacao-automacao-tstes-js/issues"
+  },
+  "homepage": "https://github.com/gleuter/pgats-programacao-automacao-tstes-js#readme",
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  }
+}
