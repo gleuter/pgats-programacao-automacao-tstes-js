@@ -20,6 +20,7 @@ Passos
 1 - Na raiz execute o comando npm install
 2 - depois execute npm t
 
+Estrutura de Pastas
 .
 ├── LICENSE
 ├── README.md
