@@ -30,7 +30,7 @@ describe("Automation Exercise", () => {
   beforeEach(() => {
     cy.visit('/');
     const signup_name = "Tester Qa";
-  Cypress.env('signup_name',signup_name)
+    Cypress.env('signup_name',signup_name)
   });
 
   it("Test Case 1: Register User", () => {
@@ -55,34 +55,23 @@ describe("Automation Exercise", () => {
   });
 
   it("Test Case 4: Logout User", () => {
-    const nomeUsuario = Cypress.env('signup_name')
-
-    cy.get("a[href$=login]").click();
-
-    cy.get('[data-qa="login-email"]').type("tester-1723417210714@mail.com");
-    cy.get('[data-qa="login-password"]').type("123456");
-    cy.get('[data-qa="login-button"]').click();
-
-  //  cy.get("i.fa-user").parent().should("contain", signup_name);
+  menu.selecionaMenu(menu.menus.LOGIN)
+  login.realizarLoginCompleto("tester-1723417210714@mail.com","123456")
   login.verificarSeUsuarioLogado(Cypress.env('signup_name'))
-
-    menu.selecionaMenu(menu.menus.LOGOUT)
-
-    cy.contains('Logged').should('not.exist');
-
-
+  menu.selecionaMenu(menu.menus.LOGOUT)
+  cy.contains('Logged').should('not.exist');
   });
 
   it("Test Case 5: Register User with existing email", () => {
-    cy.get("a[href$=login]").click();
-    cadastro.preencherFormularioComUsuarioExistente('Teste Login usuario existente',"tester-1723417210714@mail.com")
+    menu.selecionaMenu(menu.menus.LOGIN)
+    login.realizarSigUpComUsuarioExistente("Teste Login usuario existente","tester-1723417210714@mail.com")
     cy.get(".signup-form p").should(
         "contain",
         "Email Address already exist!"
       );
   });
 
-  it('Test Case 6: Contact Us Form', () => {
+  it.only('Test Case 6: Contact Us Form', () => {
     const signup_name = "Tester Qa";
 
   

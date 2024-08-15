@@ -50,13 +50,7 @@ class Cadastro {
         cy.get('[data-qa="continue-button"]').click();
     }
 
-    preencherFormularioComUsuarioExistente(user,emailCadastrado){
-        cy.get('[data-qa="signup-name"]').type(user);
-        cy.get('[data-qa="signup-email"]').type(emailCadastrado);
-        cy.contains("button", "Signup").click();
-
-    }
-
+ 
 
     deletarUsusarioLogado(){
         cy.contains("Delete Account").click();
