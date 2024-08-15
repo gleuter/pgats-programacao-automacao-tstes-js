@@ -3,7 +3,10 @@ class Menu {
     menus= {
         PRODUTOS: 'Products',
         LOGIN: 'Login',
-        LOGOUT: ' Logout'
+        LOGOUT: ' Logout',
+        CONTACT_US: ' Contact us',
+        HOME: 'Home',
+        CART: 'Cart'
 
     }
 

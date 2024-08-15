@@ -50,6 +50,17 @@ class Cadastro {
         cy.get('[data-qa="continue-button"]').click();
     }
 
+    preecherDadosContactUs(){
+        cy.get('div.contact-form > .title').should('be.visible')
+        cy.get('[data-qa="name"]').type(Cypress.env('signup_name'))
+        cy.get('[data-qa="email"]').type("tester-1723417210714@mail.com")
+        cy.get('[data-qa="subject"]').type('Subject test ')
+        cy.get('[data-qa="message"]').type('Message test ')
+    
+        cy.get('input[name="upload_file"]').selectFile('cypress/fixtures/example.json')
+        cy.get('[data-qa="submit-button"]').click()
+    }
+
  
 
     deletarUsusarioLogado(){
@@ -57,6 +68,7 @@ class Cadastro {
         cy.get('[data-qa="account-deleted"]').should("be.visible");
         cy.get('[data-qa="continue-button"]').click();
     }
+
 
 }
 
