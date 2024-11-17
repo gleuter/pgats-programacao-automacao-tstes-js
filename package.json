@@ -1,25 +1,18 @@
 {
-  "name": "pgats-programacao-automacao-tstes",
+  "name": "test-web",
   "version": "1.0.0",
-  "description": "Treabalho conclusão de disciplina de Programação para Automação de Testes",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.test.js"
+    "test_git_actions": "cypress run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gleuter/pgats-programacao-automacao-tstes-js.git"
-  },
-  "keywords": [
-    "pgats"
-  ],
-  "author": "Gleuter Pereira",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gleuter/pgats-programacao-automacao-tstes-js/issues"
-  },
-  "homepage": "https://github.com/gleuter/pgats-programacao-automacao-tstes-js#readme",
   "devDependencies": {
-    "mocha": "^10.4.0"
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^13.13.2",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-real-events": "^1.13.0"
   }
 }

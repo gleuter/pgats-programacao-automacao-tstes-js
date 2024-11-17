@@ -1,0 +1,39 @@
+name: Run Cypress Tests  Trabalho de conclusao  Github actions
+
+# Define quando o workflow será disparado
+on:
+  workflow_dispatch:
+
+jobs:
+
+  E2E-tests-Cypress-TrabalhoFinal-nivel-um:
+    runs-on: ubuntu-latest  # Maquina
+
+    # Passo a passo para execucao das tarefas
+    steps:
+   
+    - name: Checkout repository
+      uses: actions/checkout@v4 #faz o checkout
+
+    - name: Set up Node.js versao LTS
+      uses: actions/setup-node@v3
+      with:
+        node-version: 'lts'  
+  
+
+    - name: Install Yarn
+      run: |
+        npm install -g yarn
+
+    - name: Intalando dependencias
+      run: |
+        npm install -g yarn
+
+    - name: Executando os testes
+      run: |
+        yarn run test_git_actions
+
+    
+        
+
+  
