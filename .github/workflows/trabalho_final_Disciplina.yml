@@ -1,4 +1,4 @@
-name: Run Cypress Tests | Trabalho de conclusao | Github actions
+name: Run Cypress Tests  Trabalho de conclusao  Github actions
 
 # Define quando o workflow será disparado
 on:
