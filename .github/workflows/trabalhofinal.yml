@@ -13,12 +13,7 @@ jobs:
     steps:
    
     - name: Checkout repository
-      uses: actions/checkout@v4 #faz o checkout
-
-    - name: Set up Node.js versao LTS
-      uses: actions/setup-node@v3
-      with:
-        node-version: 'lts'  
+      uses: actions/checkout@v4 #faz o checkout 
   
 
     - name: Install Yarn
