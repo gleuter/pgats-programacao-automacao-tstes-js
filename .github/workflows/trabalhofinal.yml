@@ -22,7 +22,7 @@ jobs:
 
     - name: Intalando dependencias
       run: |
-        npm install -g yarn
+        npm install
 
     - name: Executando os testes
       run: |
